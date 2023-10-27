@@ -36,3 +36,8 @@ def tokenize_text(text, remove_stopwords=False):
             # filters here
             tokens.append(word)
     return tokens
+
+### New function for Assignment 2
+def format_labels_sentiment(target, label: str, docs):
+    """ format new colum label for sentiment """
+    return docs[target][label]
